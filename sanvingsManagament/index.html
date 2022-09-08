@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <title>SavingsManagament</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./resources/css/styles.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body class="">
+  <header class="cabecera">
+    <div>Ahorros: <span id="amount">0</span></div>
+    <h1>Savings Managament</h1>
+    <div class="switch" id="changeTheme">
+      <label>
+        🌞
+        <input type="checkbox" />
+        <span class="lever"></span>
+        🌚
+      </label>
+    </div>
+  </header>
+
+  <div class="row">
+    <div class="col l5 offset-l1 s12">
+      <table id="transactionTable">
+        <h4>Historial de ingresos y egresos</h4>
+        <thead>
+          <tr>
+            <th scope="col">Tipo</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Monto</th>
+            <th scope="col">Categoria</th>
+            <th scope="col">Eliminar</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div class="col l5 s12">
+      <div class="col s8 offset-s2">
+        <form id="transactionForm">
+          <div class="formField">
+            <p class="flex justify-center items-center">
+              <span>TIPO</span>
+              <label class="flex">
+                <i class="material-icons">add</i>
+                <input value="Ingreso" class="with-gap" name="transactionType" type="radio" checked />
+                <span>Ingreso</span>
+              </label>
+              <label class="flex">
+                <i class="material-icons">indeterminate_check_box</i>
+                <input value="Egreso" class="with-gap" name="transactionType" type="radio" />
+                <span>Egreso</span>
+              </label>
+            </p>
+          </div>
+          <div class="input-field">
+            <label for="transactionDescription">Descripción</label>
+            <input class="validate" type="text" id="transactionDescription" name="transactionDescription" />
+          </div>
+          <div class="input-field">
+            <label for="transactionAmount">Monto</label>
+            <input class="validate" id="transactionAmount" name="transactionAmount" type="number" />
+          </div>
+          <div class="formField">
+            <label for="transactionCategory">Categoria</label>
+
+            <select class="browser-default" id="transactionCategory" name="transactionCategory"></select>
+          </div>
+          <br />
+          <button class="btn waves-effect waves-light" type="submit" name="action" id="botonDeEnvio">
+            Añadir <i class="material-icons right"> send </i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- <div id="divValoracion">
+    <h4>Valorando la app nos ayudas a mejorar</h4>
+    <form>
+      <label for="Valorar">VALORAR</label>
+      <select class="browser-default" name="Rangos" id="Rangos">
+        <option value="Muy buena">Muy Buena</option>
+        <option value="Buena">Buena</option>
+        <option value="Mala">Mala</option>
+      </select>
+      <button id="sendButton">ENVIAR</button>
+    </form>
+  </div>
+  <div class="container mt-4 shadow-lg p-3 mb-5 bg-body rounded">
+    <h5>Luego de enviar tu valoración podrás acceder a datos de contadores y administradores que pueden ayudarte a
+      invertir tus ahorros</h5>
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody id="data">
+      </tbody>
+    </table>
+  </div>-->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./resources/js/sweetAlert.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="resources/js/scripts.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>

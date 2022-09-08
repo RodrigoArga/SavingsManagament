@@ -1,0 +1,56 @@
+td,
+th {
+  text-align: center;
+  padding: 10px;
+  border: solid red 1px;
+}
+
+.tableFormat table {
+  margin: 10px auto;
+}
+
+h1 {
+  text-align: center;
+  margin: 1rem 0 1.68rem 0;
+}
+
+h4 {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+#botonDeEnvio {
+  font-size: 23px;
+}
+
+.cabecera {
+  padding: 0 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cabecera label {
+  font-size: 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.browser-default{
+  width: 200px;
+  justify-content: center;
+  margin: auto;
+}
